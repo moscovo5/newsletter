@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title>Newsletter</title>
+
+<style>
+:root{
+    --fontM: "Montserrat", sans-serif;
+    --fontP: "Roboto", sans-serif;
+    --primary: #2ecc71;
+    --dark: #1e1e2f;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* CONTAINER */
+.content-newletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.newsletter {
+    background: #fff;
+    border-radius: 20px;
+    width: 650px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: fadeIn .6s ease;
+}
+
+/* TOP BAR */
+.barra-v {
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    height: 6px;
+}
+
+/* TITULO */
+.newsletter h2 {
+    font-family: var(--fontM);
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 20px;
+    color: var(--dark);
+}
+
+/* TEXTO */
+.newsletter p {
+    font-family: var(--fontP);
+    padding: 0 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* SOCIAL */
+.cta-new {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.reds-socias {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reds-socias a {
+    text-decoration: none;
+}
+
+.reds-socias i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    transition: .3s;
+}
+
+/* CORES DOS ICONES */
+.fa-facebook { background: #1877f2; }
+.fa-instagram { background: #e1306c; }
+.fa-whatsapp { background: #25d366; }
+.fa-linkedin { background: #0077b5; }
+
+.reds-socias i:hover {
+    transform: scale(1.1);
+}
+
+/* BOTAO */
+.cta-next {
+    display: block;
+    margin: 20px;
+    text-align: center;
+    background: var(--primary);
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: var(--fontP);
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.cta-next:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="content-newletter">
+    <div class="newsletter">
+        <div class="barra-v"></div>
+
+        <h2>Bem-vindo à Plataforma Gestiva</h2>
+
+        <p>
+            Estamos felizes por ter você connosco! A Gestiva foi criada para transformar a forma como você gere os seus serviços e clientes.
+        </p>
+
+        <p>
+            Explore funcionalidades modernas, simples e eficientes que vão elevar o seu negócio para outro nível.
+        </p>
+
+        <div class="cta-new">
+            <p><strong>Conecte-se conosco:</strong></p>
+            <div class="reds-socias">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <a href="/Conteudo/loading/index.html" class="cta-next">
+            Ir para a Plataforma
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
